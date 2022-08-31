@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ExerciseApplication</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ورود">ورود</string>
+    <string name="tell">لطفا شماره تلفن خود را وارد کنید</string>
+    <string name="tell_landscape">لطفا شماره تلفن خود را وارد کنید</string>
+    <string name="name">لطفا نام خود را وارد کنید</string>
+    <string name="name_landscape">لطفا نام خود را وارد کنید</string>
+</resources>
