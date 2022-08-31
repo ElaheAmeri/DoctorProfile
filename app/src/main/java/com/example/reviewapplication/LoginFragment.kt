@@ -1,10 +1,13 @@
 package com.example.reviewapplication
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.navigation.fragment.findNavController
 import com.example.reviewapplication.databinding.FragmentLoginBinding
 
 
@@ -36,7 +39,8 @@ class LoginFragment : Fragment() {
                 binding.etNumber.error="شماره تفن باید 11 رقمی باشد "
 
             }else{
-                binding.tvShowName.text = " سلام ${binding.etName.text}"
+                Toast.makeText(requireContext(),"سلام${binding.etName.text}",Toast.LENGTH_LONG).show()
+                findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
             }
         }
     }
